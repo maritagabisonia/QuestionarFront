@@ -1,0 +1,16 @@
+<h3>კითხვარი</h3>
+<div class="tabViewcontainer">
+    <div class="tab-buttons">
+        <button  class="buttons"[class.active]="isLoginActive" (click)="showLogin()">ავტორიზაცია</button>
+        <button class="buttons" [class.active]="!isLoginActive" (click)="showSignUp()">რეგისტრაცია</button>
+    </div>
+    <div class="tab-content">
+      <div *ngIf="isLoginActive">
+        <app-log-in></app-log-in>
+      </div>
+      <div *ngIf="!isLoginActive">
+        <app-sign-up></app-sign-up>
+      </div>
+    </div>
+</div>
+  

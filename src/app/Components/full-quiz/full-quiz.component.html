@@ -1,0 +1,75 @@
+<div class="title">
+  <h3>გამოკითხვა</h3>
+</div>
+<div class="dropdown" >
+  <p-dropdown  
+  class="form-field"
+  [options]="subjects" 
+  optionLabel="subject" 
+  optionValue="id"
+  [showClear]="true" 
+  placeholder="Select a subject"
+  [(ngModel)]="selectedSubject"
+  (onChange)="onSubjectChange($event)"
+  >/>
+</p-dropdown>
+</div>
+
+
+<div class="main">
+
+  <form [formGroup]="quizForm" (ngSubmit)="onSubmit()">
+    <label>
+      შეიყვანეთ თქვენი სახელი გვარი
+      <input formControlName="fullname">
+    </label>
+
+    <div formArrayName="questions" class="quiz-list">
+      <div class="form" *ngFor="let question of questionsFormArray.controls; let i = index" [formGroupName]="i">
+        <div class="quiz"> 
+          <div class="input-container">
+            <label for="Question{{i}}">კითხვა</label>
+            <input pInputText id="Question{{i}}" formControlName="question" />
+          </div>
+          <div *ngIf ="getAnswersFormArray(i).controls.length == 1">
+            <div formArrayName="answers">
+              <div *ngFor="let answer of getAnswersFormArray(i).controls; let j = index" [formGroupName]="j">
+                <div class="input-container">
+                  <label for="Answer{{i}}{{j}}">პასუხი</label>
+                  <input pInputText id="Answer{{i}}{{j}}" formControlName="answer" />
+                  <div *ngIf="submitted && isAnswerRequiredAndInvalid(i)" class="error-message">
+                    პასუხის გაცემა სავალდებულოა !
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div *ngIf ="getAnswersFormArray(i).controls.length > 1">
+            <div formArrayName="answers">
+              <div *ngFor="let answer of getAnswersFormArray(i).controls; let j = index" [formGroupName]="j">
+                <div class="input-container">
+                  <p-radioButton 
+                  [inputId]="'Answer' + i + j" 
+                  [value]="answer.get('answer')?.value" 
+                  formControlName="selectedAnswer" 
+                  />
+                <label [for]="'Answer' + i + j">
+                  {{ answer.get('answer')?.value }} 
+                </label>
+                </div>
+
+              </div>
+            </div> 
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <button type="submit">პასუხების გაგზავნა</button>
+    </div>
+  </form>
+</div>
+<p-toast></p-toast>
+<p-confirmDialog></p-confirmDialog>

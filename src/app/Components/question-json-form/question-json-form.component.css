@@ -1,0 +1,101 @@
+input[id^="Answer"] {
+    width: 400px; 
+    max-width: 400px;
+  }
+  .add-question form button[type="button"] {
+    background-color: #4CAF50; 
+    color: #FFFFFF; 
+    border: 1px solid #388E3C; 
+    height: 20px; 
+    width: 20px; 
+    margin-left: 20px; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  .checkbox-container   input[type="checkbox"]{
+    max-width: 26px;
+    border: 1px solid  #deefff; 
+    border-radius: 4px;
+  }
+  .checkbox-container{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  .checkbox-container label[for="important"]{
+    width:135px;
+  }
+  .checkbox-container label{
+    margin-top: 10px;
+  }
+  /* div[formArrayName="answers"] {
+    display: flex;
+    align-items: center;
+  } */
+   .addAnswer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -50px;
+    margin-right: 85px;  
+ }
+h3{
+    font-family: FiraGO;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color:  #1C3969;
+  }
+  .add-question {
+      width: 700px;
+      /* height: 190px; */
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #FFFFFF;
+      border-radius: 10px;
+  }
+  .add-question label {
+      width: 57px;
+      height: 19px;
+      font-size: 14px;
+      margin-bottom: 10px;
+      font-family: FiraGO;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 19.2px;
+      color: #1C3969;
+  }
+  .inputText input{
+      width: 550px;
+      border: none;
+      border-bottom: 1px solid #DEEFFF;
+      border-radius: 0px;
+      margin-left: 18px;
+  }
+  button{
+      margin-top: 20px;
+      margin-left: 257px;
+      border: none;
+      height: 50px;
+      width: 200px;
+      border-radius: 10px;
+      background-color: #1C3969;
+      font-family: FiraGO;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 21.6px;
+      color: #FFFFFF;
+  
+  }
+  
+  
+  .checkbox-button{
+    display: flex;
+    align-items: center;
+  }
+  

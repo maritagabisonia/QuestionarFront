@@ -1,0 +1,55 @@
+h3{
+  font-family: FiraGO;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color:  #1C3969;
+}
+.add-question {
+    width: 700px;
+    /* height: 190px; */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+.add-question label {
+    width: 57px;
+    height: 19px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: FiraGO;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: #1C3969;
+}
+.inputText input{
+    width: 550px;
+    border: none;
+    border-bottom: 1px solid #DEEFFF;
+    border-radius: 0px;
+    margin-left: 18px;
+}
+button{
+    margin-top: 20px;
+    margin-left: 257px;
+    border: none;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #1C3969;
+    font-family: FiraGO;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    color: #FFFFFF;
+
+}
+
+
+.checkbox-button{
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,43 @@
+h3{
+  font-family: FiraGO;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  color:  #1C3969;
+  margin-top: 110px;
+
+}
+.tabViewcontainer {
+  width: 600px;
+  height: 500px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 40px;
+  padding: 60px;
+  border-radius: 10px;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.buttons{
+  width: 180px;
+  height: 50px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #1C3969;
+  border: 1px solid  #DEEFFF;
+  font-family: 'FiraGO', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.tab-buttons button.active{
+  background-color:  #DEEFFF;
+}
+
+

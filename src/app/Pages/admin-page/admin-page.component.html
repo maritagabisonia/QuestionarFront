@@ -1,0 +1,29 @@
+<!-- <div class="tabViewcontainer">
+    <p-tabView>
+        <p-tabPanel header="ადმინ.პანელი">
+        <app-adm-panel></app-adm-panel>
+    </p-tabPanel>
+        <p-tabPanel header="გადმოგზავნილი/შევსებული კითხვები">
+        <app-uploaded></app-uploaded>
+    </p-tabPanel>
+      
+    </p-tabView>
+</div> -->
+
+
+<div class="tabViewcontainer">
+    <div class="tab-buttons">
+        <button  class="button1" (click)="showAdminPanel()">ადმინ.პანელ</button>
+        <button class="button2" (click)="showUploaded()">გადმოგზავნილი/შევსებული კითხვები</button>
+        <button (click)="logOut()">გამოსვლა</button>
+
+    </div>
+    <div >
+      <div class="tab-content" *ngIf="isAdminPanel" >
+        <app-adm-panel></app-adm-panel>
+      </div>
+      <div *ngIf="!isAdminPanel">
+        <app-uploaded></app-uploaded>
+      </div>
+    </div>
+</div>

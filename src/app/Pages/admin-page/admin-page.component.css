@@ -1,0 +1,55 @@
+.tabViewcontainer {
+    width: auto;
+    height: 100px;
+    padding-top: 30px;
+    background-color: #FFFFFF;
+
+  }
+  .tab-content{
+  
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+
+  }
+  /* .adm-panel{
+    align-items: center;
+  }
+  .uploaded{
+    align-items: center;
+
+  } */
+  
+  .tab-buttons {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button{
+    width: 392px;
+    height: 24px;
+    font-family: 'FiraGO', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding-top: 4px;
+    padding: 0px;
+  }
+  .button1{
+    color: #1C3969;
+    margin-left: 300px;
+  }
+  .button2{
+    color: #DEEFFF;
+    margin-right: 500px;
+  }
+  .tab-buttons button.active{
+    background-color:  #DEEFFF;
+  }
+  
+  
+  

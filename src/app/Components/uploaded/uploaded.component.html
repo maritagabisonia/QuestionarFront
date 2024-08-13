@@ -1,0 +1,21 @@
+<div class="main-container">
+  <div class="list-container">
+    <h3 >გადმოგზავნილი / შევსებული კითხვები</h3>
+    <div *ngFor="let item of items" class="list-item">
+      <button (click)="getAnswers(item)">{{ item.fullName }}</button>
+    </div>
+  </div>
+  <div class="answers-conatiner">
+    <h3>{{name}}</h3>
+    <div *ngFor="let answer of answers" class="answers-item">
+      <div class="text-container">
+        <h5 >კითხვა</h5>
+        <p >{{answer.question}}</p>
+      </div>
+      <div class="text-container">
+        <h5 >პასუხი</h5>
+        <p >{{answer.answer}}</p>
+      </div>
+    </div>
+  </div>
+</div>

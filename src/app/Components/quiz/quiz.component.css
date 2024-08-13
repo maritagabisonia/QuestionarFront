@@ -1,0 +1,97 @@
+.main{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quiz-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+  }
+  
+.title{
+    width: auto;
+    height: 100px;
+    padding-top: 10px;
+    background-color: #FFFFFF;
+}
+h3{
+    font-family: FiraGO;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color:  #1C3969;
+}
+ label{
+    width: 264px;
+    height: 19px;
+    font-family: FiraGO;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    color:  #1C3969;
+}
+ input{
+    width: 397px;
+    height: 40px;
+    border-radius: 10px ;
+    border: 1px solid #2D7ED0;
+}
+input:focus, 
+input:focus {
+    outline: none;
+    border-color: #2D7ED0; 
+}
+.quiz label{
+    width: 57px;
+    height: 19px;
+    font-family: FiraGO;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color:  #2D7ED0;
+}
+.quiz input{
+    width: 550px;
+    border: none;
+    border-bottom: 1px solid #DEEFFF;
+    border-radius: 0px;
+    margin-left: 18px; 
+}
+.quiz{
+    width: 700px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+button{
+    border: none;
+    height: 50px;
+    width: 704px;
+    border-radius: 10px;
+    background-color: #1C3969;
+    font-family: FiraGO;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    color: #FFFFFF;
+    align-items: left;
+
+}
+.error-message{
+
+    text-align: right;
+    width: 195px;
+    height: 14px;
+    font-family: FiraGO, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    color: #FF5757;
+    margin-top: 4px;
+    margin-left: auto;
+
+}

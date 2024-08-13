@@ -1,0 +1,31 @@
+<h3>კითხვების დამატება</h3>
+<div class="add-question">
+  <form [formGroup]="addQuestionForm" (ngSubmit)="onSubmit()">
+    <div class="inputText">
+      <label for="Question">კითხვა</label>
+      <input pInputText id="Question" formControlName="question" />
+    </div>
+    <div formArrayName="answers">
+      <div *ngFor="let answer of answers.controls; let i = index" [formGroupName]="i">
+        <div class="inputText">
+          <label for="Answer{{i}}">პასუხი</label>
+          <input pInputText id="Answer{{i}}" formControlName="answer" />
+          <div class="checkbox-container">
+            <label for="Correct{{i}}" >სწორია</label>
+            <input type="checkbox" id="Correct{{i}}" formControlName="correct" />
+          </div>
+        </div>
+      </div>
+      <div class="addAnswer">
+        <button type="button" (click)="addAnswer()">+</button>
+      </div>
+    </div>
+    <div class="checkbox-button">
+      <div class="checkbox-container">
+        <label for="important">სავალდებულო</label>
+        <input type="checkbox" id="important" formControlName="important" />
+      </div>
+      <button type="submit">დამატება</button>
+    </div>
+  </form>
+</div>

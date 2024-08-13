@@ -1,0 +1,30 @@
+<div class="dropdown" >
+    <p-dropdown  
+    class="form-field"
+    [options]="subjects" 
+    optionLabel="subject" 
+    optionValue="id"
+    [showClear]="true" 
+    placeholder="Select a subject"
+    [(ngModel)]="selectedSubject"
+    (onChange)="onSubjectChange($event)"
+    >/>
+</p-dropdown>
+</div>
+<div class="container">
+    <div class="add-question">
+        <!-- <app-question-form></app-question-form> -->
+        <app-question-json-form 
+        [selectedSubject]="selectedSubject"
+        (questionAdded)="onQuestionAdded($event)"
+        ></app-question-json-form>
+    </div>
+    <div class="questins-list">
+        <!-- <app-questions-list></app-questions-list> -->
+        <app-added-questions 
+        [selectedSubject]="selectedSubject"
+        [question]="question"></app-added-questions>
+    </div>
+
+</div>  
+    

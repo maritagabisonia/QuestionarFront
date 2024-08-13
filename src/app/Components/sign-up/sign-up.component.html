@@ -1,0 +1,26 @@
+<div class="container">
+    <form [formGroup]="SignUpForm"  >
+
+        <div class="inputText">
+            <label for="firstName">შეიყვანეთ თქვენი სახელი</label>
+            <input pInputText id="firstName" formControlName="firstName" />
+        </div>
+
+         <div class="inputText">
+            <label for="username">მომხმარებლის სახელი</label>
+            <input pInputText id="username" formControlName="username" />
+        </div>
+
+         <div class="password-button">
+         <div class="inputText">
+            <label for="password">პაროლი</label>
+            <input type="password" id="password"  formControlName="password" equired>    
+        </div>
+         <button label="Submit" (click)="signUp()"> რეგისტრაცია</button>
+
+        </div>
+    </form>
+    <p-toast></p-toast> 
+ </div>
+    
+    

@@ -1,0 +1,25 @@
+<h3>დამატებული კითხვები</h3>
+<form [formGroup]="questionsForm">
+    <div formArrayName="questions">
+      <div *ngFor="let question of questionsFormArray.controls; let i = index" [formGroupName]="i">
+        <div class="form">
+            <div  class="inputText">
+                <label for="Question">კითხვა</label>
+                <input pInputText id="Question" formControlName="question" />
+            </div>
+            <div  class="inputText">
+                <label for="Answer">პასუხი</label>
+                <input pInputText id="Answer" formControlName="answer" />    
+            </div>
+            <div class="checkbox-button">
+                <div class="checkbox-container">
+                    <label for="important">სავალდებულო</label>
+                    <input type="checkbox" id="important" formControlName="important" />
+                </div>
+                <button (click)="update(i)">რედაქტირება</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </form>
+

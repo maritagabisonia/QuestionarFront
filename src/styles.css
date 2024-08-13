@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #EDF6FF;
+}
+button:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #deefff;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 4px;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    width: 6px;
+    height: 12px;
+    border: solid green;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    border-radius: 0px;
+  }
+  button:disabled{
+   opacity: 50%;
+   cursor: not-allowed;
+  }

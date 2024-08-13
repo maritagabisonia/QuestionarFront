@@ -1,0 +1,92 @@
+.container{
+    justify-content: center;
+    align-items: center;
+    height: auto; 
+    margin-top: 40px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inputText{
+    display: flex;
+    flex-direction: column;
+
+}
+.password-button{
+    display: flex;
+    gap: 10px;
+
+}
+button{
+    display: flex;
+    justify-content: center;
+    margin-top: 51px;
+    border: none;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #1C3969;
+    font-family: FiraGO;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    color: #FFFFFF;
+
+}
+label{
+    font-family: FiraGO;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: #2D7ED0;
+    width: 188px;
+    height: 19px;
+    margin-bottom: 10px;
+    margin-Top: 25px;
+
+}
+input{
+    border:1px solid  #DEEFFF;
+    width: 400px;
+}
+#password{
+    border:1px solid  #DEEFFF;
+    height: 50px;
+    width: 180px;
+    border-radius: 10px;
+}
+input:focus, 
+#password:focus {
+    outline: none;
+    border-color: #2D7ED0; 
+}
+.container div:last-child{
+    margin-top: 15px;
+}
+
+
+
+::ng-deep  .p-progress-spinner-svg {
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0px;
+    justify-self: center;
+    border-top: white solid 1px;
+    border-bottom:white  solid 1px;
+    border-left: white  solid 1px;
+    border-radius: 100%;
+
+
+}
+::ng-deep button .ng-star-inserted{
+    display: flex;
+    justify-items: center;
+}
